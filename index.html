@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="starbucks-logo.png"  class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>The rise of the second wave of coffee culture is generally attributed to Starbucks, which introduced a<br> wider
+                     variety of coffee experiences. Starbucks serves hot and cold drinks, whole-bean coffee, micro-<br>ground instant 
+                     coffee, espresso, caffe latte, full and loose-leaf teas, juices, Frappuccino beverages,etc.  </p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="shake 1.png" class="starbucks" width="600">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" width="80" onclick="imgslider('shake 1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" width="80" onclick="imgslider('shake 2.png');changeCircleColor('#eb7459')"></li>
+            <li><img src="thumb3.png" width="80" onclick="imgslider('shake 3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="fb.png" width="30"></a></li>
+            <li><a href="#"><img src="ig.png" width="30"></a></li>
+            <li><a href="#"><img src="twitter.png" width="30"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.starbucks').src=anything;
+        }
+
+        function changeCircleColor(color){
+            const circle= document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
